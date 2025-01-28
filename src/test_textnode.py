@@ -11,10 +11,12 @@ class TestTextNode(unittest.TestCase):
     def test_uneq(self):
         node = TextNode("This could be a text node", TextType.BOLD)
         node2 = TextNode("This could not be a text node", TextType.BOLD)
-        node3 = TextNode("This could be a text node", TextType.ITALIC)
-        node4 = TextNode("This could be a text node", TextType.BOLD, "www.boots.dev")
-        self.assertNotEqual
+        self.assertNotEqual(node, node2)
 
+    def test_uneq2(self):
+        node = TextNode("This could be a text node", TextType.ITALIC)
+        node2 = TextNode("This could be a text node", TextType.BOLD, "www.boots.dev")
+        self.assertNotEqual(node, node2)
 
 if __name__ == "__main__":
     unittest.main()
