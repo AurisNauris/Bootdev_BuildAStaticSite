@@ -68,5 +68,3 @@ parent = ParentNode(
         )
     ]
 )
-
-print(parent.to_html())

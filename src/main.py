@@ -3,7 +3,7 @@ from htmlnode import LeafNode
 
 def main():
     new_text = TextNode("this is my string","bold", "https://www.boot.dev")
-    print(new_text)
+    #print(new_text)
 
 def text_node_to_html_node(text_node):
     match text_node.text_type:
